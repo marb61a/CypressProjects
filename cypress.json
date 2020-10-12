@@ -1,1 +1,5 @@
-{}
+{
+    "chromeWebSecurity": false,
+    "baseUrl": "https://google.com",
+    "pageLoadTimeout": 120000
+}
