@@ -10,7 +10,7 @@ export default class HomePageActions {
 
     navigateToURL(){
         // Practice site
-        cy.visit('http://www.way2automation.com/angularjs-protractor/banking/#/login');
+        cy.visit('/');
     }
 
     validateTitle(){

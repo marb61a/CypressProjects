@@ -1,14 +1,16 @@
 /// <reference types="cypress" />
 
+const or = require('../../locators.json');
+
 export default class HomePageElements {
     // Get the customer login button
     constructorLoginBtn(){
-        return cy.get('body > div.ng-scope > div > div.ng-scope > div > div.borderMbox.padT20 > div:nth-child(1) > button');
+        return cy.get(or.homepage.customerLoginButton);
     }
 
     // Get the bank manager login button
     bankManagerLoginBtn(){
-        return cy.get('body > div.ng-scope > div > div.ng-scope > div > div.borderMbox.padT20 > div:nth-child(3) > button');
+        return cy.get(or.homepage.bankManagerLoginBtn);
     }
 
 }
