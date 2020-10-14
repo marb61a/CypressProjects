@@ -15,4 +15,11 @@ export default class AddCustomerPageActions{
 
     }
 
+    // Handle the alert that pops up on registering a customer
+    validateAlert(alertMsg){
+        cy.on('window:alert', (alertText) => {
+            expect(alertText).eq(alertMsg);
+        });
+    }
+
 }
