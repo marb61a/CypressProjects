@@ -14,7 +14,7 @@ describe("Adding a new customer", () => {
     it("Add Customer Details", () => {
         homePage.loginAsBankManager();
         addCust.addCustomerDetails("Martin", "Byrne", "123456");
-
+        addCust.validateAlert("Customer added successfully");
     });
 
 });

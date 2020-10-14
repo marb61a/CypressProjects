@@ -5,7 +5,7 @@ import HomePageElements from '../pageelements/HomePageElements';
 export default class HomePageActions {
     constructor(){
         // globalThis makes the variable available everywhere whithout calling this
-        globalThis.element = new HomePageElements();
+        globalThis.homepageElement = new HomePageElements();
     }
 
     navigateToURL(){
@@ -18,11 +18,11 @@ export default class HomePageActions {
     }
 
     loginAsBankManager(){
-        element.bankManagerLoginBtn().click();
+        homepageElement.bankManagerLoginBtn().click();
     }
 
     loginAsCustomer(){
-        element.customerLoginBtn().click();
+        homepageElement.customerLoginBtn().click();
     }
 
 }

@@ -4,21 +4,21 @@ import AddCustomerPageElements from '../pageelements/AddCustomerPageElements';
 
 export default class AddCustomerPageActions{
     constructor(){
-        globalThis.element = new AddCustomerPageElements();
+        globalThis.addcustElement = new AddCustomerPageElements();
     }
 
     addCustomerDetails(firstName, lastName, postCode){
-        element.addCustomerBtn().click();
-        element.firstNameField().type(firstName);
-        element.lastNameField().type(lastName);
-        element.postCodeField().type(postCode);
-
-    }
+        addcustElement.addCustomerBtn().click();
+        addcustElement.firstNameField().type(firstName);
+        addcustElement.lastNameField().type(lastName);
+        addcustElement.postCodeField().type(postCode);
+        addcustElement.addCustomerSubmitBtn().click()
+    };
 
     // Handle the alert that pops up on registering a customer
     validateAlert(alertMsg){
         cy.on('window:alert', (alertText) => {
-            expect(alertText).eq(alertMsg);
+            expect(alertText).contains(alertText);
         });
     }
 
