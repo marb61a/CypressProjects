@@ -15,4 +15,12 @@ export default class AddCustomerPageElements{
         return cy.get(or.addcustomerpage.lastName);
     }
 
+    postCodeField(){
+        return cy.get(or.addcustomerpage.postCode);
+    }
+
+    addCustomerSubmitBtn(){
+        return cy.get(or.addcustomerpage.addCustSubmit);
+    }
+    
 }
