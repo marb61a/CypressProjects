@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "launchcypress": "./node_modules/.bin/cypress open",
+    "testcases": "./node_modules/.bin/cypress run --spec ./cypress/integration/testcases/*.js --browser chrome"
   },
   "keywords": [],
   "author": "Martin",
