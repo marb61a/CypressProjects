@@ -5,5 +5,28 @@ import AddCustomerPageActions from '../../pageobjects/pageactions/AddCustomerPag
 import OpenAccountPageActions from '../../pageobjects/pageactions/OpenAccountPageActions';
 
 describe("", () => {
+    const homePage = new HomePageActions();
+    const addCust = new AddCustomerPageActions();
+    const openAccount = new OpenAccountPageActions();
+
+    before(() => {
+        cy.fixture('testdata')
+            .then((data) => {
+                globalThis.data = data;
+            });
+    });
+
+    beforeEach(() => {
+        homePage.navigateToURL();
+    });
+
+    it("", () => {
+        homePage.loginAsBankManager();
+        addCust.addCustomerDetails(data.firstname, data.lastname, data.postcode);
+        addCust.validateAlert(data.alertmsg);
+        openAccount.openaccount(data.customer, data.currency);
+        openAccount.validateAlert();
+        
+    });
 
 });
