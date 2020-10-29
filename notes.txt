@@ -1,0 +1,22 @@
+Cypress Testing
+    - https://www.cypress.io/ 
+    - Before Cypress a tester would have to use multiple tools including
+        - A framework such as Mocha, Karma, Jasmine
+        - An assertion library like Chai or Expect.js
+        - Install the Selenium package
+        - Selenium wrappers such as Protractor, Nightwatch and Webdriver
+        - Cypress replaces all of this
+    - Cypress does not use Selenium and has a different architecture
+        - Selenium executes remote command through the network
+        - Cypress runs in the same loop as the application 
+    - Cypress is not a general automation tool it is an end to end testing tool (E2E)
+    - Cypress will work with any framework and on any website
+        - It does not matter the JS framework or if the pages are server rendered
+    - Cypress tests are written in JavaScript
+    - Cypress can be used by both developers and QA testers
+    - Cypress runs faster than other frameworks both from  its architecture
+        - Also the fact that development can happen simultaneously to testing speeds up the process
+
+Differences between Cypress and Others
+    - Ease of setup
+    - 
