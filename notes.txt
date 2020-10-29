@@ -17,6 +17,30 @@ Cypress Testing
     - Cypress runs faster than other frameworks both from  its architecture
         - Also the fact that development can happen simultaneously to testing speeds up the process
 
-Differences between Cypress and Others
+Differences between Cypress and Others (Pros and Cons)
     - Ease of setup
+        - A single command using npm to Install -> npm install cypress --save-dev
+    - Speed and stability
+        - Uses JS the main web language and runs inside the browser
+    - Flake Resistant
+        - Cypress is notified quickly when the page loads and unloads
+        - It is impossible for Cypress to miss elements when events are fired
+    - API testing
+        - Cypress has the ability to test and mock API
+    - JavaScript
+        - There is a need to know JavaScript
+    - Mobile Testing
+        - Although viewport adjustment is available there is no support for mobile testing
+    - Domain and Tabs
+        - There is only a single domain and tab available
+    - Dashboard Service
+        - In order to have a large amount of tests and recordings it is necessary to use the dashboard Service
+        - This is a monthly fee which also helps pay for continued development of Cypress
+        - https://www.cypress.io/dashboard
+
+Opening Cypress
+    - Use the following command to open Cypress
+        - ./node_modules/.bin/ cypress open
+        - This can be changed in the npm script in package.json
+            - For example -> "launchcypress": "./node_modules/.bin/cypress open"  
     - 
