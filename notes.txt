@@ -43,6 +43,7 @@ Opening Cypress
         - ./node_modules/.bin/ cypress open
         - This can be changed in the npm script in package.json
             - For example -> "launchcypress": "./node_modules/.bin/cypress open"  
+            - This then runs using npm run launchcypress
     - When opening Cypress for the first time there will need to be time added for initialisation
         - There will also be a Cypress folder generated
         - This will setup a folder structure
@@ -50,7 +51,28 @@ Opening Cypress
             - Support is used to store custom files and commands
                 - The index.js file is the first file that cypress investigates
                     - This will be for imports, additional libraries, event listeners and others too
-                -
+                - commands.js will be used to store common and custom commands
+            - Plugins folder is where plugins to extend cypress functionality are stored
+            - The integration folder will be the folder where test files are located
+                - This is where the cypress test runner will look to locate test files
+            - Fixtures is where test data objects, mocked objects and other test data are kept
+                - These will be mostly JSON files
         - Also generated will be a cypress.json file
             - This will allow for the changing default settings
+
+Cypress Updates
+    - To update Cypress is easy
+    - The test runner GUI will notify when updates are available
+    - There will even be some recommended commands available to use (npm/yarn)
+    - Changes can be seen in the changelog available at
+        - https://docs.cypress.io/guides/references/changelog.html#5-5-0
+
+Cypress API
+    - https://docs.cypress.io/api/api/table-of-contents.html
+    - Shows available prebuilt commands
+
+Mocha
+    - https://mochajs.org/
+    - Mocha is a JavaScript test framework
+    - It comes prebundled with 2 function calls
     -
