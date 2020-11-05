@@ -43,4 +43,14 @@ Opening Cypress
         - ./node_modules/.bin/ cypress open
         - This can be changed in the npm script in package.json
             - For example -> "launchcypress": "./node_modules/.bin/cypress open"  
-    - 
+    - When opening Cypress for the first time there will need to be time added for initialisation
+        - There will also be a Cypress folder generated
+        - This will setup a folder structure
+            - Screenshots will store images of tests
+            - Support is used to store custom files and commands
+                - The index.js file is the first file that cypress investigates
+                    - This will be for imports, additional libraries, event listeners and others too
+                -
+        - Also generated will be a cypress.json file
+            - This will allow for the changing default settings
+    -
