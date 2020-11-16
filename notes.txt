@@ -83,3 +83,16 @@ Mocha
             - This is a way to describe each individual test case 
             - There should be a description that makes sense for the test case
 
+!!!
+    - To see Cypress documents on a specific command
+    - On Windows hold the ctrl key and left click the Cypress command
+
+Selector Playground
+    - Available in the Cypress test runner
+    - This feature will highlight the various elements and when left click this will be preserved
+    - There is also an option to copy the get command to the clipboard
+
+Options
+    - When an element has an id but can not be clicked
+    - There are a number of options available including forcing to true
+    
