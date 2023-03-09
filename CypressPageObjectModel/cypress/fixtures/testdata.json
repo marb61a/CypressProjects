@@ -1,9 +1,0 @@
-{
-    "firstname":"Martin",
-    "lastname":"Byrne",
-    "postcode":"1123456",
-    "alertmsg":"Customer added successfully",
-    "customer": "Martin Byrne",
-    "currency": "Dollar",
-    "accountalert": "Account created successfully"
-}
