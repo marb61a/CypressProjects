@@ -32,17 +32,17 @@ Then(`I should be presented with a unsuccessful contact us submission message`, 
 });
 
 When('I type a specific first name {string}', (firstName) => {
-
+    cy.get('[name="first_name"]').type(firstName);
 });
 
 When('I type a specific last name {string}', (lastName) => {
-
+    cy.get('[name="last_name"]').type(lastName);
 });
 
 When('I type a specific first name {string}', (email) => {
-
+    cy.get('[name="email"]').type(email);
 });
 
 When('I type a specific word {string} and the number {int} within the comment input field', (word, number) => {
-
+    cy.get('textarea[name="message"]').type(word + " " + number);
 });
