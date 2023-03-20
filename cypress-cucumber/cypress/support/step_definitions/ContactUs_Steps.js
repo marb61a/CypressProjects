@@ -30,3 +30,19 @@ Then(`I should be presented with a successful contact us submission message`, ()
 Then(`I should be presented with a unsuccessful contact us submission message`, () => {
     cy.get('body').contains('Error: Invalid email address');
 });
+
+When('I type a specific first name {string}', (firstName) => {
+
+});
+
+When('I type a specific last name {string}', (lastName) => {
+
+});
+
+When('I type a specific first name {string}', (email) => {
+
+});
+
+When('I type a specific word {string} and the number {int} within the comment input field', (word, number) => {
+
+});
