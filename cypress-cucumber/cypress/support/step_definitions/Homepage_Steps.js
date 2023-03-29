@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { Given, When }  from ("@badeball/cypress-cucumber-preprocessor");
+import { Given, When }  from "@badeball/cypress-cucumber-preprocessor";
 
 const url = "http://www.webdriveruniversity.com"
 

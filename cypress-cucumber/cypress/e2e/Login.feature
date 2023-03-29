@@ -1,3 +1,5 @@
+@login @regression
+
 Feature: WebdriverUniversity - Contact Us Page
     Scenario Outline: Validate valid and invalid login credentials
         Given I navigate to the webdriveruniversity homepage

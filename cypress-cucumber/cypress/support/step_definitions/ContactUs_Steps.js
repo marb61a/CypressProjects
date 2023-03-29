@@ -1,10 +1,9 @@
 /// <reference types="cypress" />
 
-import { When, Then }  from ("@badeball/cypress-cucumber-preprocessor");
+import { When, Then }  from "@badeball/cypress-cucumber-preprocessor";
 
-When(`I type a first name`, () => {
+When('I type a first name', () => {
     cy.get('[name="first_name"]').type("Joe");
-
 });
 
 When(`I type a last name`, () => {
@@ -39,7 +38,7 @@ When('I type a specific last name {string}', (lastName) => {
     cy.get('[name="last_name"]').type(lastName);
 });
 
-When('I type a specific first name {string}', (email) => {
+When('I type a specific email address {string}', (email) => {
     cy.get('[name="email"]').type(email);
 });
 
