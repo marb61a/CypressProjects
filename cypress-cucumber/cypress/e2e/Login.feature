@@ -12,3 +12,4 @@ Feature: WebdriverUniversity - Contact Us Page
     | username  | password     | expectedAlertText    |
     | webdriver | webdriver123 | validation succeeded |
     | webdriver | Password123  | validation failed    |
+    | joe       | pass12345    | validation failed    |
