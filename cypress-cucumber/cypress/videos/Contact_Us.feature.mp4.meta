@@ -1,0 +1,31 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=4545
+END=5025
+title=WebdriverUniversity - Contact Us Page Valid Contact Us Form submission
+[CHAPTER]
+TIMEBASE=1/1000
+START=5252
+END=5551
+title=WebdriverUniversity - Contact Us Page Invalid Contact Us Form Submission
+[CHAPTER]
+TIMEBASE=1/1000
+START=5658
+END=5876
+title=WebdriverUniversity - Contact Us Page Valid Contact Us Form submission - Using  specific data
+[CHAPTER]
+TIMEBASE=1/1000
+START=5846
+END=6103
+title=WebdriverUniversity - Contact Us Page Validate Contact Us page (example #1)
+[CHAPTER]
+TIMEBASE=1/1000
+START=6111
+END=6368
+title=WebdriverUniversity - Contact Us Page Validate Contact Us page (example #2)
+[CHAPTER]
+TIMEBASE=1/1000
+START=6352
+END=6635
+title=WebdriverUniversity - Contact Us Page Validate Contact Us page (example #3)

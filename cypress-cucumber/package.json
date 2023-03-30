@@ -21,6 +21,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^12.7.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "ts-loader": "^9.4.2"
   },
   "cypress-cucumber-preprocessor": {
@@ -28,6 +29,15 @@
     "html": {
       "enabled": true,
       "output": "cypress/reports/cucumber-html/cucumber-report.html"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
+    },
+    "json": {
+      "enabled": true,
+      "formatter": "cucumber-json-formatter",
+      "output": "cypress/reports/cucumber-json/cucumber-report.json"
     }
   },
   "dependencies": {
