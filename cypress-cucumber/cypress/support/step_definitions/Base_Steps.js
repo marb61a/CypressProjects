@@ -14,3 +14,7 @@ Before(() => {
 After(() => {
     cy.log("Executes after each Scenario\Test");
 });
+
+When("I wait for {int} seconds", (seconds) => {
+    cy.wait(seconds * 1000);
+} );

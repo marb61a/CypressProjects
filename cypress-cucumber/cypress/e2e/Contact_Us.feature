@@ -32,12 +32,12 @@ Feature: WebdriverUniversity - Contact Us Page
     @smoke
     Scenario Outline: Validate Contact Us page
         And I type a first name <firstName> and a last name '<lastName>'
-        And I enter an email address '<emailAddress>' and a comment '<comment>'
+        And I type a specific email address '<emailAddress>' and a comment '<comment>'
         And I click on the submit button
         Then I should be presented with header text '<message>'
 
         Examples:
             | firstName | lastName | emailAddress           | comment               | message                      |
             | John      | Jones    | jon_jones@mail.com     | How are you?          | Thank you for your message   |
-            | Mia       | Carter   | mia_certer123@mail.com |test123 test 321       | Thank you for your message   |
+            | Mia       | Carter   | mia_carter123@mail.com | test123               | Thank you for your message   |
             | Grace     | Hudson   | grace_hudson           | Do you make websites? | Error: Invalid email address |
