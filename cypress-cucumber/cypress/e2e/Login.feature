@@ -1,6 +1,6 @@
 @login @regression
 
-Feature: webdriverUniversity - Login Page
+Feature: webdriveruniversity - Login Page
     Scenario Outline: Validate valid and invalid login credentials
         Given I navigate to the webdriveruniversity homepage
         When I click on the login portal button
