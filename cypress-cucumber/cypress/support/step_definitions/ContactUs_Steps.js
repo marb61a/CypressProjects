@@ -16,39 +16,48 @@ When('I type a last name', () => {
 });
 
 When('I enter an email address', () => {
-    cy.get('[name="email"]').type("joe_blogs123@mail.com");
+    // cy.get('[name="email"]').type("joe_blogs123@mail.com");
+    contactus_Page.type_EmailAddress("joe_blogs123@mail.com");
 });
 
 When('I type a comment', () => {
-    cy.get('textarea[name="message"]').type("Hello World");
+    // cy.get('textarea[name="message"]').type("Hello World");
+    contactus_Page.type_Comment("Hello world!");
 });
 
 When('I click on the submit button', () => {
-    cy.get('[type="submit"]').click();
+    // cy.get('[type="submit"]').click();
+    contactus_Page.clickOn_Submit_Button();
 });
 
 Then('I should be presented with a successful contact us submission message', () => {
-    cy.get('h1').should('have.text', 'Thank You for your Message!');
+    // cy.get('h1').should('have.text', 'Thank You for your Message!');
+    contactus_Page.validate_Submission_Header('Thank You for your Message!');
 });
 
 Then('I should be presented with a unsuccessful contact us submission message', () => {
-    cy.get('body').contains('Error: Invalid email address');
+    // cy.get('body').contains('Error: Invalid email address');
+    contactus_Page.validate_Submission_Header('Error: Invalid email address');
 });
 
 When('I type a specific first name {string}', (firstName) => {
-    cy.get('[name="first_name"]').type(firstName);
+    // cy.get('[name="first_name"]').type(firstName);
+    contactus_Page.type_FirstName(firstName);
 });
 
 When('I type a specific last name {string}', (lastName) => {
-    cy.get('[name="last_name"]').type(lastName);
+    // cy.get('[name="last_name"]').type(lastName);
+    contactus_Page.type_LastName(lastName);
 });
 
 When('I type a specific email address {string}', (email) => {
-    cy.get('[name="email"]').type(email);
+    // cy.get('[name="email"]').type(email);
+    contactus_Page.type_EmailAddress(email);
 });
 
 When('I type a specific word {string} and the number {int} within the comment input field', (word, number) => {
-    cy.get('textarea[name="message"]').type(word + " " + number);
+    // cy.get('textarea[name="message"]').type(word + " " + number);
+    contactus_Page.type_Comment(word + " " + number);
 });
 
 When('I type a first name {word} and a last name {string}', (firstName, lastName) => {
