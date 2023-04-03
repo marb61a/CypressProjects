@@ -1,13 +1,18 @@
 /// <reference types="cypress" />
 
 import { When, Then }  from "@badeball/cypress-cucumber-preprocessor";
+import Contact_Us_PO from "../page_objects/Contact_Us_PO";
+
+const contactus_Page = new Contact_Us_PO();
 
 When('I type a first name', () => {
-    cy.get('[name="first_name"]').type("Joe");
+    // cy.get('[name="first_name"]').type("Joe");
+    contactus_Page.type_FirstName("Joe");
 });
 
 When('I type a last name', () => {
-    cy.get('[name="last_name"]').type("Bloggs");
+    // cy.get('[name="last_name"]').type("Bloggs");
+    contactus_Page.type_LastName("Blogs");
 });
 
 When('I enter an email address', () => {
@@ -47,15 +52,20 @@ When('I type a specific word {string} and the number {int} within the comment in
 });
 
 When('I type a first name {word} and a last name {string}', (firstName, lastName) => {
-    cy.get('[name="first_name"]').type(firstName);
-    cy.get('[name="last_name"]').type(lastName);
+    // cy.get('[name="first_name"]').type(firstName);
+    // cy.get('[name="last_name"]').type(lastName);
+    contactus_Page.type_FirstName(firstName);
+    contactus_Page.type_LastName(lastName);
 });
 
 When('I type a {string} and a comment {string}', (email, comment) => {
-    cy.get('[name="email"]').type(email);
-    cy.get('textarea[name="message"]').type(comment);
+    // cy.get('[name="email"]').type(email);
+    // cy.get('textarea[name="message"]').type(comment);
+    contactus_Page.type_EmailAddress(email);
+    contactus_Page.type_Comment(comment);
 });
 
 Then('I should be presented with header text {string}', (message) => {
-    cy.xpath("//h1 | //body").contains(message);
+    // cy.xpath("//h1 | //body").contains(message);
+    contactus_Page.validate_Submission_Header(message);
 });
